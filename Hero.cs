@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameRPG
 {
-    class Hero
+    abstract class Hero
     {
         protected int health;
         protected int damage;
@@ -16,5 +16,7 @@ namespace GameRPG
             this.health = health;
             this.damage = damage;
         }
+
+        public abstract int Attack();
     }
 }

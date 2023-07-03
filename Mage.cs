@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GameRPG
 {
-    class Mage : Hero, IHero
+    class Mage : Hero
     {
         public Random rand = new Random();
         public Mage(int health = 100, int damage = 30) : base(health, damage) {
@@ -15,7 +15,7 @@ namespace GameRPG
             this.damage = damage;
         }
 
-        public int attack()
+        public override int Attack()
         {
             int randomAttack = rand.Next(this.damage) + 1;
 

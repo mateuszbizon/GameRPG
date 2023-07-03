@@ -8,6 +8,6 @@ namespace GameRPG.Interfaces
 {
     interface IHero
     {
-        int attack();
+        int Attack();
     }
 }
