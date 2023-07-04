@@ -1,16 +1,10 @@
-﻿using GameRPG.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GameRPG
+﻿namespace GameRPG
 {
     class Mage : Hero
     {
         public Random rand = new Random();
-        public Mage(int health = 100, int damage = 30, int maxHealth = 100) : base(health, damage, maxHealth) {
+        public Mage(int health = 100, int damage = 30, int maxHealth = 100) : base(health, damage, maxHealth)
+        {
             this.health = health;
             this.damage = damage;
             this.maxHealth = maxHealth;

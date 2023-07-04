@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GameRPG
+﻿namespace GameRPG
 {
     abstract class Hero
     {
@@ -12,7 +6,7 @@ namespace GameRPG
         protected int maxHealth;
         protected int damage;
 
-        public Hero(int health,  int damage, int maxHealth)
+        public Hero(int health, int damage, int maxHealth)
         {
             this.health = health;
             this.damage = damage;

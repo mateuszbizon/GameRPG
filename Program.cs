@@ -1,5 +1,4 @@
 ﻿using GameRPG;
-using GameRPG.Services;
 
 class Program
 {
@@ -8,14 +7,15 @@ class Program
         DependencyInjection di = new DependencyInjection();
 
         di.ChooseHero();
-        
+
         try
         {
-            while(true)
+            while (true)
             {
                 di.Fight();
             }
-        } catch(WinnerWasCalled ex)
+        }
+        catch (WinnerWasCalled ex)
         {
             Console.WriteLine("Koniec gry");
         }
