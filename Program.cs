@@ -1,17 +1,19 @@
 ﻿using GameRPG;
+using GameRPG.Services;
 
 class Program
 {
     static void Main(string[] args)
     {
-       Game game = new Game();
-        game.ChooseHero();
+        DependencyInjection di = new DependencyInjection();
+
+        di.ChooseHero();
         
         try
         {
             while(true)
             {
-                game.Fight();
+                di.Fight();
             }
         } catch(WinnerWasCalled ex)
         {

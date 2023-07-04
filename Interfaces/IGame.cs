@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace GameRPG.Interfaces
 {
-    interface IHero
+    interface IGame
     {
-        int Attack();
+        public void ChooseHero();
+        public void Fight();
     }
 }
